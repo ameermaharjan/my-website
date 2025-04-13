@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feedback Page</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family:'Times New Roman', Times, serif;
+      background:aliceblue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .feedback-container {
+      background: #fff;
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 500px;
+    }
+
+    .feedback-container h2 {
+      margin-bottom: 20px;
+      color: #333;
+      font-size: 24px;
+      text-align: center;
+    }
+
+    .feedback-container label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+      color: #555;
+    }
+
+    .feedback-container input,
+    .feedback-container textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+      resize: vertical;
+    }
+
+    .feedback-container textarea {
+      min-height: 100px;
+    }
+    nav {
+          background-color:black;
+          padding: 10px 0;
+          width: 100%;
+          text-align: right;
+          position: fixed;
+          top: 0;
+          
+        }
+    
+        nav a {
+          color: white;
+          margin: 0 15px;
+          text-decoration: none;
+          font-weight: bold;
+        }
+    
+        nav a:hover {
+          text-decoration: underline;
+        }
+        .yess {
+    display: flex;
+    font-size: xx-large;
+      padding-left: 20px;
+      color: white;
+    }
+    .feedback-container button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 12px;
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .feedback-container button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+    <nav>
+        <div class="yess">XAVIER</div>
+        <a href="home.html">HOME</a>
+        <a href="about.html">ABOUT US</a>
+        <a href="contact.html" class="active">CONTACT US</a>
+      </nav>
+
+  <div class="feedback-container">
+    <h2>We Value Your Feedback</h2>
+    <form>
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Feedback</label>
+      <textarea id="message" name="message" required></textarea>
+
+     <button type="submit">Submit Feedback</button>
+    </form>
+  </div>
+</body>
+</html>
