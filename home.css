@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+
+    background-color: aliceblue;
+    text-align: center;
+}
+
+.hero {
+    background: black;
+    color: white;
+    padding: 50px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 30px 0;
+    background: white;
+}
+
+.stat {
+    font-size: 2em;
+    color: black;
+    font-weight: bold;
+}
+
+.services {
+    padding: 40px 20px;
+    background: #fff;
+}
+
+.service-box {
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+    margin: 10px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cta {
+    background: black;
+    color: white;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.cta a {
+    display: inline-block;
+    background: white;
+    color: black;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.cta a:hover {
+    background: #f1f1f1;
+}
+
+nav {
+    background-color: black;
+    padding: 10px 0;
+    width: 100%;
+    text-align: right;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+a img {
+    filter: grayscale(100%);
+    transition: 0.3s;
+}
+
+a:hover img {
+    filter: none;
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.animate-fade {
+    animation: fadeIn 1s ease-out;
+}
+
+.animate-slide-up {
+    animation: slideUp 1s ease-out;
+}
+
+.animate-zoom {
+    animation: zoomIn 1s ease-out;
+}
+
+.yess {
+    display: flex;
+    font-size: xx-large;
+    padding-left: 20px;
+    color: white;
+}
